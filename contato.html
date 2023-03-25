@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Contato</title>
+        
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            img{
+                width: 10%;
+                height: 10%;
+            }
+            
+            header{
+                display: flex;
+                background-color: lightgrey;
+                height: 10%;
+            }
+            
+            h1{
+                margin: auto;
+                color: black;
+            }
+            
+            nav, ol{
+                display: flex;
+                widith: 20%;
+                background-color: lightgrey;
+            }
+            
+            ol >li{
+                list-style: none;
+                margin-left: 50%;
+                color: black;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                
+            }
+            
+            .span{
+                background-color: lightgrey;
+                margin: 2.5%;
+            }
+            p,span, address{
+                 margin: 2.5%;
+            }
+            
+            #gridContainer{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 30vh 50vh 70vh 20vh;
+                grid-template-areas: "e e e a"
+                                     "e e e a"
+                                     "e e e a"
+                                     "f f f a"
+            }
+            main{
+                padding: 10px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-area: e;
+            }
+            
+            input, label, select{
+                margin-bottom: 4px;
+            }
+            
+            section{
+                padding: 10px;
+            }
+            aside{
+                grid-template-start: 3;
+                grid-template-start: 4;
+                justify-content: center;
+                align-items: center;
+                background-color: lightgrey;
+                grid-area: a;
+                text-align: center;
+                justify-content: center;
+                padding: 10px;
+                
+            }
+            
+            #contato{
+                margin-top: 100%;
+            }
+            
+            
+            footer{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: lightgrey;
+                grid-area: f;
+                text-align: center;
+            }
+        </style> 
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>CONTATO</h1>
+        </header>
+        
+        <nav>
+            <ol>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="fotos.html">GALERIA</a></li>
+                <li>CONTATOS</li>
+            </ol>
+            
+        </nav>   
+        
+        <!--Fomulário para contato-->
+        <h2 style="margin-left: 3%">Entre e contato</h2>
+        
+         <section>    
+            <form action="" method="get" accept-charset="utf-8">
+            
+           
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" onfocus="this.value='';" ><br>
+                        
+                    <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" value=""  onfocus="this.value='';"><br>
+                    
+                    <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade" value=""  onfocus="this.value='';"><br>
+                    <label for="tel">Telefone:</label>
+                        <input type="number" name="number" id="number" value=""  onfocus="this.value='';"><br>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="CEP">CEP:</label>
+                        <input type="" name="CEP" id="CEP" value="" onfocus="this.value='';" required pattern="\d{5}-?\d{3}"><br>
+                        <label for="logradouro">Logradouro:</label>
+                        <select name="logradouro" id="logradouro">
+                            <option value="Rua">Rua</option>
+                            <option value="Avenida">Avenida</option>
+                            <option value="Praça">Praça</option>
+                        </select>
+                    <br>
+                    
+                    <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereço" id="endereço" value="" onfocus="this.value='';"> <br>
+                    <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" value="" onfocus="this.value='';"><br>
+                    <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" value="" onfocus="this.value='';"><br>
+                    
+                </fieldset>    
+                
+                <fieldset>
+                    <legend>Interessado em:</legend>
+                    
+                        Prestação PJ <input type="checkbox" name="" id="p"><br>
+                        Contrato CLT <input type="checkbox" name="" id=""><br>
+                        Avaliador de projetos <input type="checkbox" name="" id="a"><br>
+                        Montagem de portfolio <input type="checkbox" name="" id="m"><br>
+                        <br>
+                        Treinamento <input type="radio" name="" id="t">  <br>
+                        Atendimento remoto <input type="radio" name="" id="at"> <br>
+                        Avaliador de projetos <input type="radio" name="" id="av"> <br>
+                        <br>
+                    
+                    <legend>Descrição detalhada do interesse: </legend>
+                    <textarea name="outros" id="outros" rows="8" cols="60"></textarea>
+                    
+                </fieldset>
+                
+                <button type="submit">ENIVAR</button>
+            </form>
+        </section>
+            
+       
+        
+        <footer>
+            <div>
+                <h4>Desenvolvido por <i> MediaSquare </i></h4>
+            </div>
+        </footer>
+        
+    </body>
+
+
+</html>
