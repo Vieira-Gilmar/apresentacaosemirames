@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    
-        <title>CURRÍCULO</title>
-        <link rel="style.css" href="" title="" type="text/css" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Contato</title>
         
         <style>
             body{
@@ -26,16 +24,20 @@
             }
             
             h1{
-                margin-left: 20%;
+                margin: auto;
                 color: black;
             }
             
+            h2{
+                margin-left: 40%;
+            }
+
             nav, ol{
                 display: flex;
                 width: 100%;
                 background-color: lightgrey;
             }
-
+            
             ol{
                 margin-left: 25%;
             }
@@ -45,11 +47,28 @@
                 margin-left: 5%;
                 color: black;
             }
-
+            
             a{
                 text-decoration: none;
                 color: black;
                 
+            }
+
+            fieldset{
+                width: 600px;
+                margin: auto;
+            }
+
+            #consultar{
+                margin-left: -01px;
+            }
+
+            input{
+                margin-top: 5px;
+            }
+
+            .input{
+                width: 400px;
             }
             
             .span{
@@ -59,143 +78,114 @@
             p,span, address{
                  margin: 2.5%;
             }
-
-            
-            #gridContainer{
-                display: grid;
-                grid-template-columns: 3fr 1fr;
-                grid-template-rows: 30vh 50vh 40vh 20vh;
-                grid-template-areas: "e e e a"
-                                     "e e e a"
-                                     "e e e a"
-                                     "f f f a"
-
-            }
-            main{
-                padding: 10px;
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-area: e;
-            }
-            
-            aside{
-                justify-content: center;
-                align-items: center;
-                background-color: lightgrey;
-                grid-area: a;
-                text-align: center;
-                justify-content: center;
-                padding: 10px;
-                
-            }
-            
-            #contato{
-                margin-top: 100%;
-            }
-            
             
             footer{
-                grid-column-start: 1;
-                grid-column-end: 3;
+                display: block;
+                margin: auto;
+                height: 135px;
                 background-color: lightgrey;
-                grid-area: f;
-                text-align: center;
+                justify-content: center;
+            }
+            h4{
+                margin-left: 40%;
+                transform: translate(0%, 200%);
             }
 
-   
-        </style>
+            button{
+                margin-left: 28%;
+                margin-top: 2px;
+            }
+
+        </style> 
         
     </head>
     
     <body>
-        
-        <header>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIGMI8l9mYKZqkS46Zyc-DreHpAf34WfC4SJf_nbtxKia4az0Tf4K43KIRv1GWTyVWng&usqp=CAU" alt="imagem" />
-            <h1>Rubião Alcântara Machado</h1>
-        </header>
-        
+
         <nav>
             <ol>
-                <li> HOME </li>
+                <li> <a href="index.html">HOME</a> </li>
                 <li> <a href="fotos.html">GALERIA</a></li>
-                <li> <a href="contato.html">CONTATO</a></li>
+                <li>CONTATOS</li>
             </ol>
             
-        </nav>
+        </nav>   
         
-        <div id="gridContainer">
-            
-            <main>
-                <hr />
-                    <h3>Dados Pessoais</h3>
-                <hr /> 
-                
-                <p>Arquiteto</p>
-                <p>(11)9-9911-2256</p>
-                <p>Rua XPTO, 2220 - Casa Verde - SP</p>
-                
-            
-                 <hr />
-                    <h3>Experiência Profissinal</h3>
-                 <hr />
-                 <span class="span"> Arquiteto na empresa Contrói Tudo - São Paulo</span>
-                 <br />
-                 <span>07/2018 - 02/2021</span>
-                 
-                 <ul>
-                    <li>Construção residencial de alto padrão, proporcionando
-                        excelentes projetos arquitetônicos aos clientes.</li>
-                    <li>Trabalho em colaboração com consultores de projeto e empreiteiros.</li>
-                    <li>Desenvlvimento de planilhas e cronogramas de projetos.</li>
-                    <li>Organização de documentação de construção altamento detalhados</li>
-                 </ul>
-                 
-                  <span class="span"> Arquiteto Júnior na empresa Contrução do Futuro - São Paulo</span>
-                 <br />
-                 <span>03/2013 - 05/2017</span>
-                 
-                 <ul>
-                    <li>Colaboração com todas as disciplinas e consultores externos.</li>
-                    <li>Responsável pelo detalhamento técnico e produção documental.</li>
-                    <li>Elaboração e revisão de código de zoneamento.</li>
-                    <li>Utilização de programas de modelagem 3D.</li>
-                 </ul>
-                 
-                 <hr />
-                    <h3>Formação Acadêmica</h3> 
-                 <hr />
-                 
-                  <span class="span"> Mestrado em Arquiterura - PUC São Paulo - SP</span>
-                 <br />
-                 <span>08/2011 - 07/2015</span>
-                <hr />
-            </main>
-            
-            <aside>
-                <div id="contato">
-                    <h3>Contato</h3>
-                    <address>  
-                        <a href="contato.html"> rubiao@arquiteto.com.br </a> 
-                    </address> <br>
-                    <h3>Currículo de parceiros</h3>
-                    <address>
-                        <a href="https://trabalho-dev-web.netlify.app/index.html"> CURRÍCULO WAGNER LOPES </a>
-                    </address>                    
-                </div>
+        <!--Fomulário para contato-->
+        <h2>Entre e contato</h2>
 
-            </aside>
+         <section id="loader">    
+            <form action="" method="get" accept-charset="utf-8">
             
-             <footer>
-                <div>
-                    <h4>Desenvolvido por <i> MediaSquare </i></h4>
-                </div>
-            </footer>
-        
-
-        </div>
-        
+           
+                <fieldset>
+                    <legend><b>Dados Pessoais</b></legend>
+                    <label for="nome">Nome:</label>
+                        <input type="text" class="input" name="nome" id="nome" onfocus="this.value='';" ><br>
+                        
+                    <label for="email">Email:</label>
+                        <input type="email" class="input" name="email" id="email" value=""  onfocus="this.value='';"><br>
+                    
+                    <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade" value=""  onfocus="this.value='';"><br>
+                    <label for="tel">Telefone:</label>
+                        <input type="number" name="number" id="number" value="" onfocus="this.value='';"><br>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend> <b>Endereço</b></legend>
+                    <label for="CEP">CEP:</label>
+                        <input type="" name="CEP" id="CEP" size="15" maxlength="8" value="" 
+                            onfocus="this.value='';" required pattern= "\d{5}-?\d{3}"> 
+                    <br>
+                    
+                    <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" value="" onfocus="this.value='';"> 
+                        <input type="text" value="número" onfocus="this.value='';" > <br>
+                    <label for="endereco">Complemento:</label>
+                        <input type="text" onfocus="this.value='';" > <br>  
+                    <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" value="" onfocus="this.value='';"><br>
+                    <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" value="" onfocus="this.value='';"><br>
+                    <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" value="" onfocus="this.value='';"><br>
+                    
+                </fieldset>    
+                
+                <fieldset>
+                    <legend><b>Interessado em</b>:</legend>
+                    
+                        Prestação PJ <input type="checkbox" name="" id="p"><br>
+                        Contrato CLT <input type="checkbox" name="" id=""><br>
+                        Avaliador de projetos <input type="checkbox" name="" id="a"><br>
+                        Montagem de portfolio <input type="checkbox" name="" id="m"><br>
+                        <br>
+                        Treinamento <input type="radio" name="" id="t">  <br>
+                        Atendimento remoto <input type="radio" name="" id="at"> <br>
+                        Avaliador de projetos <input type="radio" name="" id="av"> <br>
+                        <br>
+                    
+                    <legend> <b>Descrição detalhada do interesse:</b> </legend>
+                    <textarea name="outros" id="outros" rows="8" cols="79"></textarea>
+                    
+                </fieldset>
+                
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+            
        
+        <footer>
+            <div>
+                <h4>Desenvolvido por <i> MediaSquare </i></h4>
+            </div>
+        </footer>
         
+        <script src="index.js"></script>
+
     </body>
-    
+
+
 </html>
